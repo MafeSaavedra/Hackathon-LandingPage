@@ -55,9 +55,9 @@ function updateCartSummary() {
   summaryContainer.innerHTML = `
   <div class="content-resumen">
     <h3 class="carousel-title">Resumen del carrito</h3>
-    <ul>${productDetails}</ul>
-    <h6>Total Cantidad: ${totalQuantity}</h6>
-    <h6>Total Precio: $${totalPrice.toFixed(2)}</h6>
+    <ul class="letra">${productDetails}</ul>
+    <h6 class="letra">Total Cantidad: ${totalQuantity}</h6>
+    <h6 class="letra" >Total Precio: $${totalPrice.toFixed(2)}</h6>
   </div>
   `;
 }
@@ -114,7 +114,6 @@ document.addEventListener('click', function (e) {
 // Navbar-------------------------------------------------
 
 document.getElementById("scroll").addEventListener('click',function()
-
 {
     let seccionObjeto = document.getElementById('segundaParte');
 
@@ -122,7 +121,6 @@ document.getElementById("scroll").addEventListener('click',function()
 });
 
 document.getElementById("scroll-car").addEventListener('click',function()
-
 {
     let seccionObjeto = document.getElementById('carritoCompras');
 
@@ -130,9 +128,15 @@ document.getElementById("scroll-car").addEventListener('click',function()
 });
 
 document.getElementById("scroll-galeria").addEventListener('click',function()
-
 {
     let seccionObjeto = document.getElementById('seccion-galeria');
+
+    seccionObjeto.scrollIntoView({behavior:"smooth"})
+});
+
+document.getElementById("scroll-productos").addEventListener('click',function()
+{
+    let seccionObjeto = document.getElementById('segundaParte');
 
     seccionObjeto.scrollIntoView({behavior:"smooth"})
 });

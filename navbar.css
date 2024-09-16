@@ -1,6 +1,6 @@
 body {
-    background-color: #9a44b4;
-    background: linear-gradient( 180deg, #9a44b4, #461f52, #482a52, #8a8a8a);
+    /* background-color: #672e79; */
+    background: linear-gradient( 180deg, #9a44b49d, #582566fb, #461f52cc);
     
     }
     
@@ -66,7 +66,7 @@ body {
         grid-template-columns: 1fr 2fr; 
         gap: 20px; 
         align-items: start;
-        margin-top: 100px;
+        margin-top: 80px;
       }
       
     
@@ -136,8 +136,7 @@ body {
             background-position: 0 0;
         }
     }
-    
-    
+      
     
     footer.footer-contenedor {
         color: white;
@@ -190,6 +189,8 @@ body {
         .iconCarrito{
             width: 50px;
             cursor: pointer;
+            /* padding: 10px; */
+            margin-bottom: 15px;
         }
 
         .icon{
