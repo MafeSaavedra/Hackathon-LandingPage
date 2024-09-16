@@ -1,0 +1,268 @@
+body {
+    background-color: #9a44b4;
+    background: linear-gradient( 180deg, #9a44b4, #461f52, #482a52, #8a8a8a);
+    
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    
+    
+    h1 {
+        color: white;
+        text-align: center;
+        padding-left: 1rem ;
+        
+    }
+        
+    a{
+        display: flex;
+        text-align: end;
+        color: white;
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        text-decoration: none;
+    
+    
+    }
+    
+    a:hover{
+        background-color: black;
+        border-radius: 2rem;
+    }
+
+    .content-nav-bar{
+        position: fixed;
+        background-color: #672e79;
+        width: 100vw;
+        z-index: 7;
+        top: 0;
+        padding: 0px 2%;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    .navegacion-principal{
+        display: flex ;
+        text-align: end;
+        justify-content: space-between;
+        gap: 50px;
+        padding-right: 2rem;
+    }
+    
+        
+        
+    
+    
+    
+    
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        gap: 20px; 
+        align-items: start;
+        margin-top: 100px;
+      }
+      
+    
+      .imagen.modelo {
+        width: 100%; 
+        height: auto; 
+        object-fit: cover;
+      }
+      
+    
+      .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px; 
+      }
+      
+      /* Estilo para la imagen "letra" */
+      .imagen.letra {
+        width: 35%; 
+        height: auto; 
+    
+      }
+      
+      /* Estilo para el boton */
+    
+    
+      .boton-infinito{
+        background-color: #070707;
+        cursor: pointer;
+        border: none;
+        padding: 16px 32px;
+        color: rgb(185, 41, 166);
+        font-size: 24px;
+        font-weight: bold;
+        position: relative;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+    }
+    
+    .boton-infinito::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            60deg,
+            red,blue,deeppink,blue,red,blue,deeppink,blue
+        );
+        background-size: 800%;
+        border-radius: 10px;
+        filter: blur(10px);
+        animation: glowing 30s linear infinite;
+    }
+    
+    @keyframes glowing {
+        0% {
+            background-position: 0 0;
+        }
+        50%{
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+    
+    
+    
+    footer.footer-contenedor {
+        color: white;
+        padding: 2%;
+        display: flex;
+        justify-content: space-between; /* Distribuye el espacio entre las columnas */
+        align-items: center; /* Centra verticalmente */
+      }
+      
+      .footer-column {
+        text-align: center;
+        flex: 1; /* Las columnas ocupan el mismo ancho */
+      }
+      
+      .derechos {
+        text-align: left;
+      }
+            
+    
+      .name{
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+      }
+      
+      .name p {
+          padding: 4px;
+        margin: 5px 0;
+      }
+    
+    
+    
+    
+    .imagen.modelo, .imagen.letra {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .imagen.modelo:hover {
+        -webkit-transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;}
+      
+    
+        .imagen.letra:hover
+         {-webkit-transform: rotate(360deg);transform: rotate(360deg)
+        }
+
+        .iconCarrito{
+            width: 50px;
+            cursor: pointer;
+        }
+
+        .icon{
+            display: flex;
+        }
+
+        .walter{
+            font-size: 30px;
+        }
+
+    @media(max-width:480px) {
+    
+        .nav-bar{
+            display: flex;
+            justify-content: space-around;
+          
+          gap: 20px;
+          flex-direction: column;
+          
+          font-size: 1px;
+        }
+    
+        .navegacion-principal{
+            font-size: 1px;
+        }
+        
+        .walter{
+            font-size: 14px;
+            width: 20px;
+            height: 20px;
+        }
+    
+        .content {
+            grid-template-columns: 1fr; /* Coloca el contenido en una sola columna */
+          }
+    
+    
+          .footer-contenedor{
+           display: block;
+          }
+    
+          .name{
+            font-size: 10px;
+          }
+    
+          footer.footer-contenedor {
+            flex-direction: column; /* Cambiar a una sola columna */
+            align-items: center; /* Centrar el contenido */
+            text-align: center; /* Alinear el texto al centro */
+          }
+        
+          .derechos {
+            margin-bottom: 15px; /* Espacio entre el texto de derechos y los iconos */
+          }
+        
+          .icon {
+            margin-bottom: 15px; /* Espacio entre los iconos y los nombres */
+          }
+        
+          .icon img {
+            margin: 5px; /* Asegura que haya espacio entre los iconos */
+            width: 40px; /* Ajustar el tamaño de los iconos si es necesario */
+          }
+    
+          .icon
+        
+          .name {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            font-size: 14px;
+          }
+        
+         
+        }
+    
