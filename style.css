@@ -1,0 +1,170 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.carousel-content{
+    padding: 3% 0 ;
+    background-color: white;
+}
+
+.carousel-person{
+    width: 80%;
+    background-color: #ceb3d6;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-title{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.carousel-title-producto{
+    color: #672e79;
+    padding-bottom: 20px;
+}
+
+.separar-card{
+    display: flex;
+    gap:5px
+}
+
+.img-person{
+    /* height: 100%; */
+    background-color: black;
+    object-fit: cover;
+    transition: filter  0.5s ease;
+}
+
+.card:hover img{
+    filter:saturate(1%);
+    transition: filter  0.5s ease;
+}
+
+.carousel-boton-card{
+    background-color: #9a44b4 ;
+    border: #672e79;
+}
+
+.carousel-boton-card:hover{
+    background-color: #7c3791;
+}
+
+.carousel-boton-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #9a44b4;
+}
+
+/* **************************************************************** */
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-1 {
+    max-height: 400px; 
+  }
+
+.img-2, .img-3 {
+    max-height: 200px;
+}
+
+.image-container:hover img {
+  transform: scale(1.05);
+}
+
+.seccion-mas-vendido{
+    text-align: center;
+    padding: 2% 10%;
+    /* background-color: #672e79; */
+}
+
+.etiqueta-img{
+    width: 100%;
+    position: absolute;
+    background-color: #7c379193;
+    top:50%;
+    padding: 5%;
+    color: white;
+}
+
+
+@media (max-width: 480px) {
+    .etiqueta-img{
+        font-size: 10px;
+    }
+}
+
+
+
+  /*  *************************************/
+
+.carousel-person .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-boton-card {
+  margin-top: 10px;
+}
+
+.product-details {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.product-details img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: #672e79; */
+}
+
+li{
+    list-style-type: none;
+}
+
+.carrito-vacio{
+    width: 80vw;
+    color: white;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: #9a44b471;
+    border-radius: 10px;
+}
+
+.content-resumen{
+    width: 100vw;
+    background-color: #9a44b471;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 30px;
+}
+
+.letra{
+    color: white;
+}
